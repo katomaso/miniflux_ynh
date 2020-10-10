@@ -1,0 +1,72 @@
+{
+    "id": "miniflux",
+    "name": "Miniflux RSS reader",
+    "packaging_format": 1,
+    "description": {
+        "en": "Miniflux RSS reader"
+    },
+    "version": "1.0~ynh3",
+    "url": "https://github.com/katomaso/miniflux_ynh",
+    "license": "GPL-3.0-only",
+    "maintainer": {
+        "name": "Tomas Peterka",
+        "email": "tomas@peterka.me"
+    },
+    "requirements": {
+        "yunohost": ">= 3.6.0"
+    },
+    "multi_instance": false,
+    "services": [
+        "nginx",
+        "postgres"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for your Webapp",
+                    "fr": "Choisissez un domaine pour votre Webapp"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for your Webapp",
+                    "fr": "Choisissez un chemin pour votre Webapp"
+                },
+                "example": "/reader",
+                "default": "/reader"
+            },
+            {
+                "name": "password",
+                "type": "password",
+                "optional": true,
+                "ask": {
+                    "en": "Admin user password"
+                },
+                "example": "S0meStrongP^^s"
+            },
+            {
+                "name": "Pocket consumer key",
+                "type": "string",
+                "ask": {
+                    "en": "Pocket app key to use for saving articles"
+                },
+                "optional": true
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "ask": {
+                    "en": "Is it a public website?",
+                    "fr": "Est-ce un site public ?"
+                },
+                "default": true
+            }
+        ]
+    }
+}

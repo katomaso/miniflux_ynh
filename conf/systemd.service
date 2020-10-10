@@ -1,0 +1,12 @@
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+Description=Miniflux RSS Reader
+
+[Service]
+Type=simple
+User=__APP__
+Group=__APP__
+WorkingDirectory=__FINAL_PATH__/
+ExecStart=__FINAL__PATH__/miniflux-linux-amd64 -c __FINAL__PATH__/miniflux.conf
