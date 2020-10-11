@@ -62,6 +62,7 @@ ynh_install_app_dependencies $pkg_dependencies
 #=================================================
 mkdir -p $final_path
 ynh_setup_source --dest_dir=$final_path
+chmod ug+x $final_path/miniflux-linux-amd64
 
 #=================================================
 # FIND AND OPEN A PORT
