@@ -8,5 +8,5 @@ Description=Miniflux RSS Reader
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINAL_PATH__/
-ExecStart=__FINAL__PATH__/miniflux-linux-amd64 -c __FINAL__PATH__/miniflux.conf
+WorkingDirectory=__FINALPATH__/
+ExecStart=__FINALPATH__/miniflux-linux-amd64 -c __FINALPATH__/miniflux.conf
