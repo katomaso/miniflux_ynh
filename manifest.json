@@ -51,7 +51,7 @@
                 "example": "S0meStrongP^^s"
             },
             {
-                "name": "Pocket consumer key",
+                "name": "pocket",
                 "type": "string",
                 "ask": {
                     "en": "Pocket app key to use for saving articles"
