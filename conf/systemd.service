@@ -9,4 +9,4 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/miniflux-linux-amd64 -c __FINALPATH__/miniflux.conf
+ExecStart=__FINALPATH__/app -c __FINALPATH__/miniflux.conf
