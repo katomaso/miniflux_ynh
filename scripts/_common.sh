@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+pkg_dependencies="postgresql postgresql-contrib"
+
 #=================================================
 # EXPERIMENTAL HELPERS
 #=================================================
