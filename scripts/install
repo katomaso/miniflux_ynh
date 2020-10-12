@@ -123,6 +123,7 @@ ynh_replace_string --match_string="__PORT__" --replace_string="$port" --target_f
 
 # append POCKET key at the end of config (if specified)
 if [ ! -z $pocket ]; then
+    echo "" >> $config
     echo "POCKET_CONSUMER_KEY=$pocket" >> $config
 fi
 
